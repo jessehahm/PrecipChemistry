@@ -1,0 +1,390 @@
+
+      DESCRIPTION OF PARAMETERS INCLUDED IN NADP/NTN REPORT OF WEEKLY
+      CONCENTRATION DATA
+
+
+
+  Site ID
+	Alpha-numeric site identification code, first two characters of
+	which are the abbreviation of the state in which the site is
+	located.  (For intercomparison sites this order is reversed.)
+
+  Date/Time
+      On  - Date on which the sample bucket was installed on the
+            collector, reported in Greenwich Mean Time (GMT), mm/dd/yyyy hh:mm:ss.  
+      Off - Date on which the sample bucket was removed from the 
+            collector, reported in Greenwich Mean Time (GMT), mm/dd/yyyy hh:mm:ss.
+
+  *Ion concentrations
+	Concentrations of Ca, Mg, K, Na, NH4, NO3, Cl and SO4 reported in
+	mg/L.  Concentrations which are below the detection limit of the
+	analysis are indicated with a "<" preceding the value.  The value
+	reported is the actual limit of detection or, in the case of a
+	diluted sample, the product of the detection limit value and the
+	dilution factor.  (In calculating weighted-mean concentrations and
+	depositions NADP/NTN substitutes one-half the reported detection
+	limit for concentrations below the limit of detection.)
+
+ *pH and Cond.
+	pH reported as the negative log of hydrogen ion concentration and
+	conductance reported in microsiemens per centimeter.
+
+	       lab - pH or conductance of the precipitation sample as
+	             measured in the laboratory at the CAL.  
+           field - pH or conductance of the precipitation sample as 
+                   measured by the site operator in the field laboratory.  
+           FV - field validity code.  The NADP Technical Committee has 
+               	approved a set of screening criteria to be used in
+		       assessing the validity of field chemistry measurements.
+		       DATA USERS ARE URGED TO USE THE CODES IN THE COLUMNS
+   		       WITH THE HEADING "FV" TO DETERMINE WHETHER THE FIELD
+		       MEASUREMENTS TO THE LEFT OF THE CODES ARE ADEQUATE FOR
+		       AN INTENDED APPLICATION.  Note that pH and conductance
+		       measurements are screened independently; the code
+		       assigned to the pH measurement for a particular sample
+		       may not match the code assigned to the conductance
+		       measurement.  Field validity codes currently in use
+		       are:
+
+		     p - the field measurement passes all of the
+		          screening criteria 
+              f - the field measurement fails to pass all of the 
+                  screening criteria 
+              i - incomplete information.  Some of the information 
+                  required to complete the screening is unavailable.
+			    (In the case of incomplete information, none of
+			    the information that IS available would warrant
+	  		    the assignment of a field validity code of "f".)
+                    Complete information is available only for field
+			    chemistry measurements made since the beginning
+			    of 1987, because sufficient measurements of a
+			    quality control check sample were not required
+			    by the Network prior to that time.
+
+		  For more information about the field chemistry data and
+		  the screening criteria applied to them, see Section
+		  III.B and pages 4-5 of the attached excerpt from the
+		  NADP/NTN Annual Data Summary for 1991.
+
+ *Svol
+	Volume of sample, in milliliters, captured in the wet-side bucket
+	of the wet/dry sampler.
+
+ *RG ppt
+	Precipitation amount as measured by the rain gage in millimeters.
+	Trace amounts are indicated by -7.00.
+
+ *Sub ppt
+	Precipitation amount used by NADP/NTN in calculating weighted-mean
+	concentrations, depositions and precipitation totals.  In most
+	cases sub ppt equals the rain gage reading.  Where the rain gage
+	reading is a trace amount, sub ppt is assigned a value of 0.127mm;
+	in cases where the rain gage reading is missing or invalid, sub
+	ppt is calculated by converting the sample volume to its
+	equivalent depth. (The area of the sampler bucket used for this
+	conversion is 678.9 square centimeters.)
+
+  Lab type
+	A code indicating the condition of the sample upon arrival at the
+	CAL.
+         w - sample volume of approximately 35mL or more 
+        wa or wd - sample volume less than 35mL; dilution was required
+         t - trace sample of less than approx. 10mL; analyses are
+             incomplete 
+        da - dry sample 
+        qa - quality assurance sample submitted in lieu of a 
+             wet-side sample bucket for a week during which no 
+             precipitation occurred
+
+  Valcode
+	A code which indicates whether a sample is considered valid
+	according to NADP/NTN data validation rules.  In the case of a
+	valid sample, the code indicates how the sample is used in
+	calculations of weighted-mean concentrations, depositions and
+	data completeness estimates.
+                0 - invalid sample 
+                t - valid trace sample 
+                d - valid dry collection period 
+                w - valid sample of lab type w 
+               wa - valid sample of lab type wa 
+        Only samples with valcodes of w and wa are used by NADP/NTN in 
+        calculating weighted-mean concentrations and depositions.
+
+  Invalcode
+	A series of codes assigned to samples which are considered invalid
+	by NADP/NTN for the purposes of computing weighted-mean
+	concentrations, depositions and data completeness estimates.  The
+	codes indicate the reasons for invalidation.
+                b - bulk sample (Collector was open continuously.) 
+                u - undefined sample (Collector was open for > 6 hours and
+                    less than the entire sampling interval when no precipitation 
+                    was occurring.) 
+                f - field protocol departure 
+                c - contaminated sample 
+                v - inadequate volume for analysis
+                e - extended sampling interval (> 8 days) 
+                l - lab error 
+                i - incomplete chemical analyses 
+                n - no sample collected 
+                p - precipitation amount unknown 
+                x - reasons other than described above
+
+  Notes
+	Coded summary of the CAL screening codes and remarks written on
+	the Field Observer Report form by field personnel, CAL staff and
+	Coordination Office staff.
+                bu - bulk sample.  Sample was continuously exposed to both
+                      wetfall and dryfall.  (Collector was open
+                      continuously.) 
+                na - Results are not yet available (predominantly dry samples).
+                nn - Information was never reported and will never be available.
+                ns - No chemistry data will be reported because of extreme 
+                     contamination, undefined sampling protocol, leakage, loss 
+                     in the mail, etc.  
+                sp - Sample was collected at a nonapproved sampling site or 
+                     with nonapproved equipment.
+
+
+ *Missing values are indicated by --.
+
+                         DATA SELECTION CRITERIA
+
+A.  Criteria for Determining a Valid Sample
+     Individual weekly samples are screened to determine their validity using 
+criteria based on the following parameters:  
+                      rain gage depth
+                      sample volume
+                      sampling interval
+                      lab type
+                      sample validation codes
+rain gage depth is the precipitation depth measured by the rain gage
+collocated with the wet/dry precipitation collector (see Bigelow 1984 for
+details).  
+
+sample volume is the amount of precipitation contained in the
+wet-side sample bucket as determined by weight in the field laboratory.
+
+sampling interval is the time period over which the precipitation sample
+was collected.  The standard interval is one week, from 9:00 a.m. Tuesday
+to 9:00 a.m. Tuesday of the following week.  Samples are collected on this
+schedule whether or not precipitation occurs.  
+
+lab type is a code assigned to samples received at the CAL, based on the
+volume of the sample available for analysis.  Each lab type keys a
+different set of sample processing and measurement steps.  A complete set
+of laboratory measurements (pH, specific conductance, concentrations of
+major cations and anions) is made only on samples with a lab type of wa or
+w, which are samples of 10 mL volume or more.  (Samples of lab type wa are
+diluted in the laboratory to produce sufficient volume for analysis;
+samples of lab type w are large enough to be analyzed without dilution.)
+Lab type t samples are samples of less than 10 mL.  Laboratory
+measurements of pH and conductance are made on these samples if there is
+sufficient undiluted sample volume.  No other chemical constituents are
+measured for lab type t samples.  A lab type of da indicates that the
+sample bucket was dry when it arrived in the laboratory.  Chemical
+analyses for lab type da samples are not included in this report.  
+
+sample validation codes (Bowersox 1985, Aubertin et al. 1990) are assigned
+during routine NADP/NTN quality assurance evaluations to identify samples
+that were not collected and/or processed according to NADP/NTN protocols,
+or were contaminated.  Samples are considered valid and are included in
+calculations of ion concentration and deposition summary statistics if all
+of the following sample validity criteria are met:
+
+    1.   NADP/NTN criteria for site location, sample collection and
+         handling, and measurement protocols are satisfied (Bigelow 1984, 
+         Bigelow and Dossett 1988).  
+    2.   The sample consists of "wet-only deposition," i.e., it was 
+         not exposed to excess dry deposition (see Bowersox 1985).  
+    3.   The sample is not contaminated (see Bowersox 1985).  
+    4.   A complete set of chemical measurements (made at the CAL) is 
+         reported for the sample.  
+    5.   The sampling interval is 6-8 days.  
+    6.   There is a rain gage depth or sample volume reported for the 
+         sample.  
+
+In the evaluation of data completeness, two additional sample types are 
+considered valid:
+
+    1.   All samples from sampling periods during which it was confirmed
+         that no precipitation occurred are considered valid.  These samples 
+         are generally of lab type da.  
+    2.   All samples from sampling periods during which a trace of precipitation
+         (<0.01 in.) occurred are considered valid if the sample volume was 
+         less than 10 mL (lab type da or t).
+
+When calculating data Completeness Criterion 1 values (see Section III.C)
+for periods of one year or longer, all sampling intervals with <0.02 in.
+of precipitation are treated as valid.  (Note that this relaxation of the
+above criteria applies only to the calculation of data Completeness
+Criterion 1 and to summary periods of one year or longer.)
+
+B.  Criteria for Determining the Validity of Field Chemistry Measurements
+
+    Measurements of precipitation pH and conductance made by site
+operators ("field pH" and "field conductance" measurements) are screened
+to determine their validity based on the following information:  
+
+	  sample validation codes 
+        CAL measurements of pH and conductance 
+        field measurements of the quality control check sample 
+        field pH and conductance measurements of the precipitation sample 
+
+sample validation codes are applied to exclude samples that fail to meet
+sample validity criteria 1-3, described in Section III.A.  Criterion 4,
+the requirement for complete chemical analyses, is relaxed for field
+chemistry measurements; it is required only that there be valid laboratory
+pH and conductance measurements for the sample (see below).  Criteria 5
+and 6 are not applied to individual field chemistry measurements; however,
+to be included in calculations of weighted-mean field pH and hydrogen ion
+deposition for seasonal and annual summary periods, and in the statistical
+summaries of field pH and hydrogen ion concentrations in Section VII.C,
+samples must meet all six of the criteria.
+
+CAL measurements of pH and conductance are used by the CAL to screen
+samples for possible contamination.  Valid laboratory measurements of
+these parameters are required to ensure that the samples have been
+subjected to this screening.
+
+field measurements of the quality control check sample are used to
+evaluate the accuracy of the equipment and the site operator's measurement
+technique.  Prior to making field pH and conductance measurements, the
+site operator measures and records the pH and conductance of a quality
+control check sample (Bigelow and Dossett 1988).  The CAL-certified values
+of the quality control check sample are 22 microsiemens per centimeter
+(S/cm) for conductance and 4.3 pH units for pH, and are known to the site
+operator.  For field precipitation chemistry measurements to be considered
+valid, both of the quality control check sample measurements must have
+been made, and the reported values must be 22.0 4.0 S/cm for conductance
+and 4.30  0.10 pH unit for pH.
+
+field pH and conductance measurements of the precipitation sample are used
+to check for inconsistencies between the reported field pH and conductance
+values.  For the field chemistry measurements to be considered valid, the
+reported conductance must be equal to or greater than the calculated
+conductance based entirely on the hydrogen ion concentration.  The
+calculated conductance is the product of the hydrogen ion concentration
+(determined in the field laboratory) and the equivalent conductance of
+hydrogen ion at 25 degrees Celsius (Franson 1985, Weast 1989).  This check
+ignores the potential contribution of other ions to the conductance, thus
+only identifies certain cases where the hydrogen ion concentration is
+likely to have been overestimated by the field pH measurement.  While it
+is also possible that the conductance measurement was inaccurate, this
+risk is reduced by excluding field conductance measurements where the
+quality control check sample conductance is reported as being outside the
+acceptable range of 22.0  4.0 S/cm.  Furthermore, field measurements of
+conductance meet NADP/NTN accuracy goals more frequently than field
+measurements of pH (Nilles et al. 1993).
+
+C.  Criteria for  Including a Site  in  the Annual  Isopleth Maps and  
+    Seasonal  Data Summary Tables 
+
+Four Completeness Criteria form the basis for the decision to include 
+the laboratory chemistry data from a site in the Annual Isopleth Maps 
+and Seasonal Data Summary Tables in Section VI.  All four criteria must 
+be met.  The criteria are listed below.
+
+    Criterion 1.  There must be valid samples (as defined in Section
+                  III.A) for at least 75 percent of the summary period.  
+
+    Criterion 2.  For at least 90 percent of the summary period there 
+                  must be precipitation amounts (including zero amounts) 
+                  either from the rain gage or from the sample volume.  
+
+    Criterion 3.  There must be valid samples (as defined in Section III.A) 
+                  for at least 75 percent of the total precipitation amount 
+                  reported for the summary period.  
+
+    Criterion 4.  For the entire summary period the total precipitation 
+                  as measured from the sample volume must be at least 75 
+                  percent of the total precipitation measured by the rain 
+                  gage for all valid samples where both values are available.  
+
+    Criteria 1 and 2 ensure that measurements on valid wet deposition
+samples and of precipitation amounts were reported for a minimum
+acceptable fraction of the summary period.  This requires a properly
+operating wet/dry collector and rain gage.  Criterion 3 ensures that there
+are valid precipitation chemistry data to represent 75 percent of the
+precipitation that was estimated to have occurred during the summary
+period.  Criterion 4 sets the minimum acceptable level for the collection
+efficiency of the wet/dry collector relative to the rain gage.  This
+ensures some consistency in the operation of the rain gage and wet/dry
+collector.
+
+    It is important to recognize that if all the criteria were satisfied
+at the lower limit of acceptability, the summary could still account for
+less than 75 percent of the actual precipitation at the site.  This could
+occur because the 90 percent precipitation coverage criterion (Criterion
+2) is based on time and there may be no record of the amount of
+precipitation missed during the unsampled 10 percent of the period.  Where
+the precipitation coverage is 100 percent, however, these criteria ensure
+that at least 75 percent of the precipitation is represented by valid
+samples.
+
+    The following example illustrates the interpretation of the
+Completeness Criteria values for a hypothetical site.  For the annual
+summary period, the hypothetical values for this site are:
+
+	 Criterion 1    (Percent valid samples)                      91%
+	 Criterion 2    (Percent precipitation coverage)             95%
+	 Criterion 3    (Percent precipitation with valid samples)   65%
+	 Criterion 4    (Percent collection efficiency)              98%
+
+The values for Criteria 1 and 2 indicate that valid samples were obtained
+for 91 percent of the summary period while valid precipitation
+measurements were obtained for 95 percent of the summary period.  (The
+amount of precipitation that occurred during the remaining 5 percent of
+the period is unknown.)  Criterion 3 relates the amount of precipitation
+represented by valid samples to the total measured precipitation.  The
+value for this criterion is calculated by summing the rain gage
+measurements associated with valid samples (substituting the sample volume
+where necessary), then dividing by the total measured precipitation.  In
+this case, although 91 percent of the summary period was represented by
+valid samples, only 65 percent of the measured precipitation was
+associated with valid samples.  (This can occur when a few very large
+precipitation events are not represented by valid samples.)  Finally, the
+value reported for Criterion 4 indicates that for valid samples, the
+amount of precipitation captured by the wet-side bucket on the wet/dry
+collector was 98 percent of that measured by the rain gage.  It should be
+noted that since Criterion 3 was not met for this hypothetical site,
+annual NADP/NTN Completeness Criteria are not satisfied; therefore, this
+site would not be included in annual isopleth maps in this report.
+
+    For each site, two sets of hydrogen ion values are included in this
+report.  One set is from pH measurements made at the CAL ("laboratory
+pH"); the other is from measurements made in the field laboratory at the
+site ("field pH").  While the CAL laboratory measurements are subject to
+more rigorous quality assurance and offer greater standardization among
+sites than the field measurements, the field measurements have the
+advantage of providing information about the chemistry of the sample
+shortly after the sample was collected.  Comparisons of field and
+laboratory pH measurements, as well as analyses of natural and simulated
+precipitation samples processed according to the same protocols as
+NADP/NTN samples, have shown that hydrogen ion concentrations tend to
+decrease between the time the pH is measured in the field and when it is
+measured again in the laboratory.  This loss of hydrogen ion has been
+variously attributed to microbial activity, degradation of organic acids,
+dissolution of particulate matter, and ion exchange processes involving
+the walls and/or lid of the shipping container (Bigelow et al. 1989).  In
+NADP/NTN samples, the annual median losses have ranged from 4
+microequivalents per liter (eq/L) to 6 eq/L (Bigelow et al. 1989).
+Because the pH scale is logarithmic, these losses have little effect on
+sample pH values if the hydrogen ion concentrations are initially high.
+However, where hydrogen ion concentrations are relatively low, as in the
+western United States, these losses can result in changes of several
+tenths of a pH unit.  Given the magnitude of these changes, the NADP/NTN
+has elected to display both the field-measured and laboratory-measured
+hydrogen ion values in this report.
+
+    Precipitation-weighted means of field pH measurements are included in
+the annual isopleth maps and seasonal data summary tables if:  (a) all
+four of the Completeness Criteria were met for the summary period, and (b)
+at least 50 percent of the precipitation which occurred during the summary
+period is represented by samples with complete, valid laboratory chemistry
+data and valid field pH measurements.  (Only these samples are included in
+calculations of weighted-mean field pH and hydrogen ion deposition).  The
+required percentage of precipitation represented by valid field pH
+measurements is lower than that for the laboratory-determined ion
+concentrations because NADP/NTN protocols call for field chemistry
+measurements to be omitted on samples of less than 70 mL.
+
